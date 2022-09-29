@@ -12,9 +12,53 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <div class="row h-100 w-100 m-0">
+    <div class="col bg-light align-self-center p-0 mx-5 border border-5 border-success rounded-bottom">
+      <header>
+        <h1 class="text-center bg-success text-white p-3">D&iacute;as laborables y no laborables</h1>
+      </header>
+      <main>
+        <div class="container">
+          <!-- Entradas -->
+          <section>
+            <div class="row my-5">
+              <div class="col-12 col-sm-4">
+                <label for="dia">D&iacute;a:</label>
+                <input type="text" class="form-control" name="dia" id="dia" placeholder="Día...">
+              </div>
+              <div class="col-12 col-sm-4">
+                <label for="">Mes:</label>
+                <input type="text" class="form-control" name="mes" id="mes" placeholder="Mes...">
+              </div>
+              <div class="col-12 col-sm-4">
+                <label for="">A&ntilde;o:</label>
+                <input type="text" class="form-control" name="anio" id="anio" placeholder="Año...">
+              </div>
+            </div>
+          </section>
+          <!-- Boton -->
+          <section>
+            <div class="row text-center">
+              <div class="col-12">
+                <button class="btn btn-success"><i class="fa-solid fa-calendar-day"></i> Calcular</button>
+              </div>
+            </div>
+          </section>
+          <!-- Salida -->
+          <section>
+            <div class="row my-5">
+              <div class="col text-center">
+                <input type="text" class="col-12 col-sm-8 bg-secondary text-white text-center" id="laborable" disabled>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="bg-success text-white text-end border border-1 border-success">
+        <p class="m-auto">Ejercicio de Generation</p>
+      </footer>
+    </div>
+  </div>
   <!-- JS de bootstrap -->
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="scripts.js"></script>
